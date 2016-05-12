@@ -9,7 +9,7 @@ Fetch Test
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
 <script>
   var url = "https://aed.azure-mobile.net/api/aedgroup/";
-  fetch(url)
+  fetch(url, {mode: 'cors'})
     .then(function(response) {
       return response.json()
     }).then(function(json) {
