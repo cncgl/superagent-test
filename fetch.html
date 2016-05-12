@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Fetch Test</title>
+</head>
+<body>
+Fetch Test
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js"></script>
+<script>
+  var url = "https://aed.azure-mobile.net/api/aedgroup/";
+  fetch(url)
+    .then(function(response) {
+      return response.json()
+    }).then(function(json) {
+    console.log('parsed json', json)
+  }).catch(function(ex) {
+    console.log('parsing failed', ex)
+  })
+</script>
+</body>
+</html>
