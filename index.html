@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Superagent test</title>
+</head>
+<body>
+てすと
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/superagent/1.2.0/superagent.min.js"></script>
+<script>
+  var request = window.superagent;
+  var url = "https://aed.azure-mobile.net/api/aedgroup/";
+  request.get(url, function(err, res) {
+    console.log("GET Response: " + res.body);
+  });
+</script>
+</body>
+</html>
